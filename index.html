@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ninja Quiz</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <!-- top section -->
+  <div class = intro py-3 bg-white text-center>
+    <div class ="container">
+      <h2 class ="text-primary display-3 my-4">Quiz</h2>
+    </div>
+    <div class = "result py-4 d-none bg-light text-center">
+      <div class = 'container'>
+        <p>You are <span class = 'text-primary display-4 p-3'>0%</span> correct!</p>
+      </div>
+    </div>
+  </div>
+  <!-- quiz section -->
+  <div class = 'quiz py-4 bg-primary'>
+    <div class="container">
+      <h2 class="my-5 text-white">Please answer the below questions.</h2>
+      <form class= 'quiz-form text-light'>
+        <div class="my-5">
+          <p class= "lead font-weight-normal">1. What is the use of isNaN function?</p>
+          <div class='form-check my-2 text-white-50'>
+            <input type="radio" name='q1' value='A' checked>
+            <label class = 'form-check-label'>It is like NULL. The NULL value is used to represent no value or no object. It implies no object or null string, no valid boolean value, no number, and no array object.</label>
+          </div>
+          <div class='form-check my-2 text-white-50'>
+            <input type="radio" name='q1' value='B'>
+            <label class = 'form-check-label'>isNan function returns true if the argument is not a number; otherwise, it is false.</label>
+          </div>
+        </div>
+        <div class="my-5">
+          <p class= "lead font-weight-normal">2. What is ‘this’ keyword in JavaScript?</p>
+          <div class='form-check my-2 text-white-50'>
+            <input type="radio" name='q2' value='A' checked>
+            <label class = 'form-check-label'>referes to This function</label>
+          </div>
+          <div class='form-check my-2 text-white-50'>
+            <input type="radio" name='q2' value='B'>
+            <label class = 'form-check-label'>‘This’ keyword refers to the object from where it was called.</label>
+          </div>
+        </div>
+        <div class="my-5">
+          <p class= "lead font-weight-normal">3. Does JavaScript support automatic type conversion?</p>
+          <div class='form-check my-2 text-white-50'>
+            <input type="radio" name='q3' value='A' checked>
+            <label class = 'form-check-label'>Yes, for some types.</label>
+          </div>
+          <div class='form-check my-2 text-white-50'>
+            <input type="radio" name='q3' value='B'>
+            <label class = 'form-check-label'>Yes, JavaScript does support automatic type conversion. It is the common way of type conversion used by JavaScript developers.</label>
+          </div>
+        </div>
+        <div class="my-5">
+          <p class= "lead font-weight-normal">4. What is the use of Void (0)?</p>
+          <div class='form-check my-2 text-white-50'>
+            <input type="radio" name='q4' value='A' checked>
+            <label class = 'form-check-label'>It is like undefined. 1- Variable used in the code doesn’t exist.
+              2- Variable is not assigned to any value 3- Property does not exist.</label>
+          </div>
+          <div class='form-check my-2 text-white-50'>
+            <input type="radio" name='q4' value='B'>
+            <label class = 'form-check-label'>Void(0) is used to prevent the page from refreshing, and parameter “zero” is passed while calling. Moreover, Void(0) is used to call another method without refreshing the page.</label>
+          </div>
+        </div>
+        <div class="text-center">
+          <input type = 'submit' class='btn btn-light'>
+        </div>
+      </form>
+    </div>
+  </div>
+ 
+  <script src="main.js"></script>
+</body>
+</html>
